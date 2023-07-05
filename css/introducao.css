@@ -1,6 +1,7 @@
 .introducao-bg {
   background: #000000;
   color: #ffffff;
+  box-shadow: inset 0 -120px #ffffff;
 }
 .introducao {
   display: grid;
@@ -15,18 +16,22 @@
 }
 .introducao-conteudo {
   align-self: end;
-  padding-bottom: 120px;
+  padding-bottom: 200px;
 }
 .introducao h1 {
   margin-bottom: 32px;
   font-size: 3.5rem;
   line-height: 1.125;
+  font-family: "Poppins";
+  font-weight: 600;
 }
 .introducao p {
   margin-bottom: 20px;
   font-size: 1.5rem;
   line-height: 1.5;
   color: #b2b2b2;
+  font-family: "Roboto";
+  font-weight: 400;
 }
 .introducao h1 span {
   color: #ffbb00;
@@ -41,8 +46,60 @@
   color: #332200;
   font-size: 1.125rem;
   line-height: 1.33;
-  font-weight: bold;
+  font-family: "Poppins";
+  font-weight: 600;
 }
 .introducao a:hover {
   background: linear-gradient(#ffb60d, #e59317);
+}
+@media (max-width: 600px) {
+  .introducao a {
+    padding: 12px 16px;
+    font-size: 1rem;
+  }
+}
+.introducao img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+@media (max-width: 1200px) {
+  .introducao-conteudo h1 {
+    font-size: 3rem;
+  }
+  .introdução-conteudo p {
+    font-size: 1.125rem;
+  }
+}
+@media (max-width: 1000px) {
+  .introducao-conteudo h1 {
+    font-size: 2.5rem;
+  }
+  .introdução-conteudo p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 850px) {
+  .introducao-bg {
+    background: #111111;
+    padding-top: 40px;
+    box-shadow: inset 0 -60px #ffffff;
+  }
+  .introducao {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .introducao-conteudo {
+    padding-bottom: 0px;
+  }
+  .introducao-conteudo h1 {
+    font-size: 2.5rem;
+  }
+  .introdução-conteudo p {
+    font-size: 0.5rem;
+  }
+  .introducao img {
+    height: 300px;
+    width: 100%;
+  }
 }

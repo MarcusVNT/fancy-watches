@@ -32,22 +32,7 @@
   object-fit: cover;
   border-radius: 4px;
 }
-@media (max-width: 1200px) {
-  .introducao-conteudo h1 {
-    font-size: 3rem;
-  }
-  .introdução-conteudo p {
-    font-size: 1.125rem;
-  }
-}
-@media (max-width: 1000px) {
-  .introducao-conteudo h1 {
-    font-size: 2.5rem;
-  }
-  .introdução-conteudo p {
-    font-size: 1rem;
-  }
-}
+
 @media (max-width: 850px) {
   .introducao-bg {
     background: var(--cor-11);
@@ -60,12 +45,6 @@
   }
   .introducao-conteudo {
     padding-bottom: 0px;
-  }
-  .introducao-conteudo h1 {
-    font-size: 2.5rem;
-  }
-  .introdução-conteudo p {
-    font-size: 0.5rem;
   }
   .introducao img {
     height: 300px;

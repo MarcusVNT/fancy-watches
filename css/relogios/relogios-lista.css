@@ -1,0 +1,57 @@
+.relogios-lista {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.relogios-lista h2 {
+  margin-bottom: 40px;
+}
+.relogios-lista ul {
+  display: flex;
+  gap: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: auto;
+}
+.relogios-lista li {
+  min-width: 280px;
+}
+.relogios-lista a {
+  display: block;
+}
+.relogios-lista img {
+  margin-bottom: 16px;
+}
+.relogios-lista h3 {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+.relogios-lista h3::before {
+  content: "";
+  background-color: var(--cor-p1);
+  height: 8px;
+  width: 12px;
+  display: inline-block;
+  margin-right: 8px;
+  transition: width 0.2s;
+}
+.relogios-lista a:hover h3::before {
+  width: 24px;
+}
+.relogios-lista li span {
+  padding-left: 20px;
+}
+
+@media (max-width: 800px) {
+  .relogios-lista {
+    padding-bottom: 60px;
+  }
+  .relogios-lista ul {
+    gap: 20px;
+  }
+}

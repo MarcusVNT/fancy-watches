@@ -23,9 +23,7 @@
 .introducao p {
   margin-bottom: 20px;
 }
-.introducao h1 span {
-  color: var(--cor-p1);
-}
+
 .introducao img {
   height: 100%;
   object-fit: cover;

@@ -2,6 +2,8 @@ body {
   margin: 0px auto;
   min-width: 320px;
   font-family: Arial, Helvetica, sans-serif;
+  /* Excluir no final do projeto. */
+  margin-bottom: 600px;
 }
 ul {
   padding: 0px;

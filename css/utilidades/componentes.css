@@ -16,6 +16,7 @@
   text-transform: uppercase;
   color: var(--cor-p5);
   font: 600 1.125rem/1.35 "Poppins", sans-serif;
+  text-align: center;
 }
 .botao:hover {
   background: linear-gradient(#ffb60d, #e59317);
@@ -35,6 +36,7 @@
   text-transform: uppercase;
   color: var(--cor-p1);
   font: 500 1.5rem/1.5 "Poppins", sans-serif;
+  text-align: center;
 }
 .botao-2::after {
   content: "";
@@ -45,4 +47,18 @@
 }
 .botao-2:hover {
   color: var(--cor-0);
+}
+
+.botao-3 {
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 8px;
+  background: var(--cor-10);
+  color: var(--cor-2);
+  text-transform: uppercase;
+  font: 600 1.125rem/1.35 "Poppins", sans-serif;
+  text-align: center;
+}
+.botao-3:hover {
+  background: var(--cor-9);
 }

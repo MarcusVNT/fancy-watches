@@ -16,6 +16,7 @@
 
 /* Relogios*/
 @import "./relogios/relogios-lista.css";
+@import "./relogios/relogios.css";
 
 /* Seguros */
 @import "./seguros/seguros.css";

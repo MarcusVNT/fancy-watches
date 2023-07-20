@@ -1,0 +1,99 @@
+.relogios-bg {
+  background: linear-gradient(to right, var(--cor-0) 30%, var(--cor-11) 0%);
+}
+
+.relogios {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.relogios-img {
+  display: grid;
+}
+
+.relogios-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  grid-area: 1/1;
+}
+
+.relogios-img span {
+  background: var(--cor-12);
+  grid-area: 1/1;
+  place-self: start end;
+  margin-top: 20px;
+  padding: 8px 16px 8px 8px;
+  display: inline-block;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.relogios-conteudo {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-content: center;
+}
+
+.relogios h2,
+.relogios p {
+  grid-column: 1/-1;
+}
+
+.relogios h2 {
+  margin-bottom: 20px;
+}
+.relogios h2::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--cor-p1);
+  margin-bottom: 8px;
+}
+
+.relogios p {
+  margin-bottom: 32px;
+}
+
+.relogios a {
+  place-self: end;
+}
+
+.relogios ul {
+  display: grid;
+  gap: 16px;
+}
+
+.relogios li {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .relogios {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .relogios-bg {
+    background: var(--cor-11);
+  }
+}
+@media (max-width: 600px) {
+  .relogios-conteudo {
+    grid-template-columns: 1fr;
+  }
+  .relogios ul {
+    font-size: 1rem;
+    margin-bottom: 32px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .relogios a {
+    place-self: start;
+  }
+}

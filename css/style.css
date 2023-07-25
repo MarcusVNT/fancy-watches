@@ -17,7 +17,9 @@
 /* Relogios*/
 @import "./relogios/relogios-lista.css";
 @import "./relogios/relogios.css";
-@import "../relogios/greubel-forsey.html";
+
+/* Relogio */
+@import "./relogio/relogio.css";
 
 /* Seguros */
 @import "./seguros/seguros.css";

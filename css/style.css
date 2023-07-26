@@ -20,6 +20,7 @@
 
 /* Relogio */
 @import "./relogio/relogio.css";
+@import "./relogio/seguro.css";
 
 /* Seguros */
 @import "./seguros/seguros.css";

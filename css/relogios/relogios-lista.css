@@ -17,6 +17,13 @@
   margin-right: auto;
   overflow-x: auto;
 }
+
+#relogio .relogios-lista ul {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
 .relogios-lista li {
   min-width: 280px;
 }

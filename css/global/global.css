@@ -30,3 +30,6 @@ blockquote,
 dd {
   margin: 0px;
 }
+button {
+  border: none;
+}

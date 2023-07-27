@@ -38,11 +38,55 @@
     </div>
 
     <div class="contato container">
-      <section aria-label="Enderenço">
+      <section class="contato-dados" aria-label="Enderenço">
         <h2 class="font-1-m cor-0">Loja Online</h2>
-
+        <div class="contato-endereco font-2-s cor-4">
+          <p>Rua Logo Ali, 7070</p>
+          <p>Pão de Queijo</p>
+          <p>Minas Gerais - Brasil</p>
+        </div>
+        <address class="contatos-meios font-2-s cor-4">
+          <a href="mailto:contato@fancywatches.com">contato@fancywatches.com</a>
+          <a href="mailto:assistencia@fancywatches.com">assistencia@fancywatches.com</a>
+          <a href="tel:+5532991158336">+55 32 991158336</a>
+        </address>
+        <div class="contato-redes">
+          <a href="https://www.instagram.com/marcusvnt/">
+            <img src="./img/redes-sociais/instagram-p.svg" alt="Instagram">
+          </a>
+          <a href="https://www.linkedin.com/in/marcus-vnt/">
+            <img src="./img/redes-sociais/linkedin-p.svg" alt="Linkedin">
+          </a>
+          <a href="https://twitter.com/MarcusVNT">
+            <img src="./img/redes-sociais/twitter-p.svg" alt="Twitter">
+          </a>
+          <a href="https://github.com/MarcusVNT">
+            <img src="./img/redes-sociais/github-p.svg" alt="GitHub">
+          </a>
+        </div>
       </section>
+      <section class="contato-formulario" aria-label="Formulário">
+        <form class="form" action="./contato.html">
+          <div>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu Nome">
+          </div>
+          <div>
+            <label for="nome">Telefone</label>
+            <input type="text" id="telefone" name="telefone" placeholder="99 99999-9999">
+          </div>
+          <div>
+            <label for="nome">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="exemplo@email.com">
+          </div>
+          <div>
+            <label for="nome">Mensagem</label>
+            <textarea rows="6" id="mensagem" name="mensagem" placeholder="O que você precisa?"></textarea>
+          </div>
+          <button type="submit" class="botao">Enviar Mensagem</button>
 
+        </form>
+      </section>
     </div>
   </main>
 

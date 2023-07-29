@@ -33,7 +33,7 @@
   width: 18px;
   height: 10px;
   margin-left: 12px;
-  background: url(../../img/seta.svg);
+  background: url(../../img/icones/seta.svg);
 }
 .botao.seta:hover::after {
   transform: translateX(8px);

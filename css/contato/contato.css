@@ -1,5 +1,5 @@
 #contato {
-  background: linear-gradient(var(--cor-11) 45%, var(--cor-1) 0px);
+  background: linear-gradient(var(--cor-11) 700px, var(--cor-1) 0px);
 }
 .contato {
   display: grid;

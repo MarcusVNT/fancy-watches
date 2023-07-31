@@ -2,6 +2,24 @@
   background: linear-gradient(var(--cor-11) 700px, var(--cor-1) 0px);
 }
 
-label {
-  color: white;
+.orcamento {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  padding-bottom: 120px;
+}
+
+.orcamento h2 {
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.orcamento h2::before {
+  content: "";
+  display: inline-block;
+  height: 4px;
+  width: 8px;
+  background: var(--cor-p1);
+  position: absolute;
+  left: -12px;
 }

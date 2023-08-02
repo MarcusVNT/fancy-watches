@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fancy Watches - Orçamento</title>
   <meta name="description" content="Contatos">
+  <link rel="preload" href="./css/style.css" as="style">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,60 +50,91 @@
           <h2 class="font-1-xs cor-5">Escolha o seu</h2>
 
           <input type="radio" name="produto" value="greubel-forsey" id="greubel-forsey">
-          <label for="greubel-forsey">Greubel Forsey <span>R$47.890,00 </span></label>
+          <label for="greubel-forsey">Greubel Forsey <span>R$ 47.890,00 </span></label>
+          <div class="orcamento-detalhes">
+            <ul class="font-1-xs cor-8">
+              <li><img src="./img/icones/arrow.svg" alt="">Precisão Cronográfica</li>
+              <li><img src="./img/icones/arrow.svg" alt="">Pulseira de Coro Napa</li>
+              <li><img src="./img/icones/arrow.svg" alt="">Frame de Ouro 18K</li>
+              <li><img src="./img/icones/arrow.svg" alt="">À Prova D'água</li>
+            </ul>
+            <img src="./img/Greubel Forsey.jpg" alt="Relógio Greubel Forsey">
+          </div>
 
           <input type="radio" name="produto" value="raymond-weil" id="raymond-weil">
-          <label for="raymond-weil">Raymond Weil <span>R$87.890,00</span></label>
+          <label for="raymond-weil">Raymond Weil <span>R$ 87.890,00</span></label>
+          <div class="orcamento-detalhes">
+            <ul class="font-1-xs cor-8">
+              <li><img src="./img/icones/arrow.svg" alt="">Engrenagens de Titânio</li>
+              <li><img src="./img/icones/arrow.svg" alt="">Frame Externo de Ouro Branco</li>
+              <li><img src="./img/icones/arrow.svg" alt="">Decoração de Cristal</li>
+              <li><img src="./img/icones/arrow.svg" alt="">À Prova D'água</li>
+            </ul>
+            <img src="./img/Raimond Weil 2.jpg" alt="Relógio Raimond Weil">
+          </div>
 
           <input type="radio" name="produto" value="belushi-quartz" id="belushi-quartz">
-          <label for="belushi-quartz">Belushi Quartz <span>R$62.490,00</span></label>
-
+          <label for="belushi-quartz">Belushi Quartz <span>R$ 62.490,00</span></label>
+          <div class="orcamento-detalhes">
+            <ul class="font-1-xs cor-8">
+              <li><img src="./img/icones/arrow.svg" alt="">Design Moderno </li>
+              <li><img src="./img/icones/arrow.svg" alt="">Pulseira Pintada Com Tinta Especial</li>
+              <li><img src="./img/icones/arrow.svg" alt="">Frame de Ouro 18K</li>
+              <li><img src="./img/icones/arrow.svg" alt="">À Prova D'água</li>
+            </ul>
+            <img src="./img/belushi-quartz.jpg" alt="Relógio Belushi Quartz">
+          </div>
         </div>
-
 
         <div class="orcamento-conteudo" id="orcamento-seguro">
           <h2 class="font-1-xs cor-5">Escolha o seu</h2>
+
+          <input type="radio" name="produto" value="prata" id="prata">
+          <label for="prata">Prata <span>R$ 199,00</span></label>
+
+          <input type="radio" name="produto" value="ouro" id="ouro">
+          <label for="ouro">Ouro <span>R$ 299,00</span></label>
         </div>
       </div>
 
       <div class="orcamento-dados form">
-        <h2 class="font-1-xs cor-9">Dados Pessoais</h2>
+        <h2 class="font-1-xs cor-9 col-2">Dados Pessoais</h2>
         <div>
           <label for="nome">Nome</label>
-          <input type="text" id="nome" name="nome" placeholder="Primeiro Nome">
+          <input type="text" id="nome" name="nome" placeholder="Primeiro Nome" autocomplete="on">
         </div>
         <div>
           <label for="sobrenome">Sobrenome</label>
-          <input type="text" id="sobrenome" name="sobrenome" placeholder="Segundo Nome">
+          <input type="text" id="sobrenome" name="sobrenome" placeholder="Segundo Nome" autocomplete="on">
         </div>
         <div class="col-2">
           <label for="cpf">CPF</label>
-          <input type="string" id="cpf" name="cpf" placeholder="000.000.000.00">
+          <input type="string" id="cpf" name="cpf" placeholder="000.000.000.00" autocomplete="on">
         </div>
         <div class="col-2">
           <label for="email">E-mail</label>
-          <input type="email" id="email" name="email" placeholder="exemplo@exemplo.com">
+          <input type="email" id="email" name="email" placeholder="exemplo@exemplo.com" autocomplete="on">
         </div>
-        <h2 class="font-1-xs cor-9">Entrega</h2>
+        <h2 class="font-1-xs cor-9 col-2">Entrega</h2>
         <div>
           <label for="cep">CEP</label>
-          <input type="string" id="cep" name="cep" placeholder="00000-000">
+          <input type="string" id="cep" name="cep" placeholder="00000-000" autocomplete="on">
         </div>
         <div>
           <label for="logradouro">Logradouro</label>
-          <input type="text" id="logradouro" name="logradouro">
+          <input type="text" id="logradouro" name="logradouro" autocomplete="on">
         </div>
         <div>
           <label for="numero">Numero</label>
-          <input type="string" id="numero" name="numero">
+          <input type="string" id="numero" name="numero" autocomplete="on">
         </div>
         <div>
           <label for="bairro">Bairro</label>
-          <input type="string" id="bairro" name="bairro">
+          <input type="string" id="bairro" name="bairro" autocomplete="on">
         </div>
         <div>
           <label for="cidade">Cidade</label>
-          <input type="string" id="cidade" name="cidade">
+          <input type="string" id="cidade" name="cidade" autocomplete="on">
         </div>
         <div>
           <label for="estado">Estado</label>

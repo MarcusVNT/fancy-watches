@@ -21,8 +21,9 @@ const parametros = new URLSearchParams(location.search);
 
 function ativarProtudo(parametros) {
   const elemento = document.getElementById(parametros);
-  elemento.checked = true;
-  console.log(elemento);
+  if (elemento) {
+    elemento.checked = true;
+  }
 }
 
 parametros.forEach(ativarProtudo);

@@ -43,7 +43,7 @@
   transition: 0.2s;
 }
 .perguntas button:hover::after,
-.preguntas button[aria-expanded="true"]::after {
+.perguntas button[aria-expanded="true"]::after {
   transform: rotate(180deg);
 }
 

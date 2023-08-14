@@ -6,11 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fancy Watches - Relógios de Luxo</title>
   <meta name="description" content="Relógios de alta qualidade de construção com materiais nobres. A autoridade de uma pessoa começa pelo seu pulso.">
-  <link rel="preload" href="./css/style.css" as="style">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="./favicon.png">
+  <link rel="preload" href="./css/style.min.css" as="style">
+  <link rel="stylesheet" href="./css/style.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body>
@@ -33,13 +36,13 @@
   <main class="introducao-bg">
     <div class="introducao container">
       <div class="introducao-conteudo">
-        <h1 class="font-1-xxl cor-0">Relógios de Luxo Feitos com Maestria e Precisão<span class="cor-p1">.</span></h1>
-        <p class="font-2-l cor-5">
+        <h1 class="font-1-xxl cor-0 fadeInLeft" data-anime="200">Relógios de Luxo Feitos com Maestria e Precisão<span class="cor-p1">.</span></h1>
+        <p class="font-2-l cor-5 fadeInLeft" data-anime="400">
           O tempo voa, mas os nossos relógios permanecem. Pequenas obras de arte fruto de um trabalho cuidadoso e preciso.
         </p>
-        <a class="botao" href=./relogios.html>Escolha o Seu</a>
+        <a class="botao fadeInUp" data-anime="600" href=./relogios.html>Escolha o Seu</a>
       </div>
-      <div>
+      <div class="fadeInRight" data-anime="800">
         <img src="./img/New Lige.jpg" alt="Relógio New Lige">
       </div>
     </div>
@@ -176,7 +179,7 @@
             <img src="./img/redes-sociais/linkedin.svg" alt="Linkedin">
           </a>
           <a href="https://twitter.com/MarcusVNT">
-            <img src="./img/redes-sociais/twitter.svg" alt="Twitter">
+            <img src="./img/redes-sociais/x.svg" alt="X">
           </a>
           <a href="https://github.com/MarcusVNT">
             <img src="./img/redes-sociais/github.svg" alt="GitHub">
@@ -194,6 +197,7 @@
       <p class="footer-copy font-2-m cor-6">Fancy Watches © alguns direitos reservados.</p>
     </div>
   </footer>
+  <script src="./js/plugins/simple-anime.js"></script>
   <script src="./js/script.js"></script>
 </body>
 

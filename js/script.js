@@ -9,8 +9,8 @@ function ativarLink(link) {
     link.classList.add("ativo");
   }
 
-  console.log(url);
-  console.log(href);
+  // console.log(url);
+  // console.log(href);
 }
 
 links.forEach(ativarLink);
@@ -45,4 +45,29 @@ function eventoPerguntas(pergunta) {
 }
 
 perguntas.forEach(eventoPerguntas);
-console.log(perguntas);
+// console.log(perguntas);
+
+// Galeria de Bicicletas
+
+const galeria = document.querySelectorAll(".relogio-img img");
+const galeriaContainer = document.querySelector(".relogio-img");
+
+function trocarImagem(event) {
+  const img = event.currentTarget;
+  const media = matchMedia("(min-width: 920px)").matches;
+  if (media) {
+    galeriaContainer.prepend(img);
+  }
+}
+
+function eventosGaleria(img) {
+  img.addEventListener("click", trocarImagem);
+}
+
+galeria.forEach(eventosGaleria);
+
+// Animação do Plugin
+
+if (window.SimpleAnime) {
+  new SimpleAnime();
+}
